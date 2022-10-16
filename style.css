@@ -76,7 +76,8 @@ body {
 }
 
 h1 {
-  font-family: 'DM Sans Medium';
+  font-family: 'DM Sans Regular';
+  font-weight: normal;
   color: var(--text-color);
   font-size: 1.1rem;
   margin: 0;
@@ -109,10 +110,6 @@ a {
   color: var(--text-color);
   text-decoration: underline;
   transition: all 0.5s;
-}
-
-a:hover {
-  opacity: 0.5;
 }
 
 .main-nav {
@@ -160,15 +157,6 @@ a:hover {
   transition: width 0.5s;
 }
 
-
-.list__item a:hover::after {
-  width: 100%;
-}
-
-.list__item a:hover {
-  opacity: 0.5;
-}
-
 .list__icon {
   display: inline-block;
   vertical-align: middle;
@@ -176,18 +164,10 @@ a:hover {
   width: 24px;
 }
 
-.list__icon:hover {
-  cursor: pointer;
-}
-
 .list__icon svg path {
   stroke: none;
   fill: var(--text-color);
   transition: fill 0.5s ease-in-out;
-}
-
-.list__icon:hover svg path {
-  fill: var(--text-color);
 }
 
 .hero {
@@ -212,15 +192,6 @@ a:hover {
   opacity: 0;
   transition: all 0.5s;
   width: 0%;
-}
-
-.hero__title:hover {
-  opacity: 0.5;
-}
-
-.hero__title:hover::after {
-  opacity: 1;
-  width: 100%;
 }
 
 .hero__image {
@@ -262,11 +233,6 @@ a:hover {
   }
 }
 
-.hero__spinner:hover {
-  cursor: pointer;
-  animation-play-state: paused
-}
-
 .hero__spinner text {
   font-family: 'DM Sans Medium';
   font-size: 1.1rem;
@@ -278,7 +244,7 @@ a:hover {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -307,18 +273,6 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.work__image-wrapper:hover {
-  opacity: 1;
-}
-
-.work__image-wrapper:hover .work__image {
-  border-radius: 4px;
-}
-
-.work__image-wrapper:hover .work__title {
-  opacity: 1;
-}
-
 .work__image {
   width: 100%;
   height: 250px;
@@ -340,11 +294,6 @@ a:hover {
   width: 100%;
   text-align: center;
   text-shadow: black 1px 0 10px;
-}
-
-.work__image:hover {
-  cursor: pointer;
-  transform: scale(0.98);
 }
 
 .contact {
@@ -447,10 +396,6 @@ a:hover {
   width: 30px;
 }
 
-.socials__icon:hover svg {
-  opacity: 0.5;
-}
-
 .socials__icon svg {
   height: 30px;
   width: 30px;
@@ -478,10 +423,6 @@ a:hover {
 
 .cookie-notice[hidden] {
   display: none;
-}
-
-.cookie-notice:hover svg {
-  animation-play-state: running;
 }
 
 .cookie-notice__wrapper {
@@ -528,12 +469,6 @@ a:hover {
   color: var(--text-color);
   background-color: var(--bg-color);
   border: solid 2px var(--text-color);
-}
-
-.cookie-notice__button:hover {
-  cursor: pointer;
-  background-color: var(--text-color);
-  color: var(--bg-color);
 }
 
 .cookie-notice__form {
@@ -674,5 +609,72 @@ a:hover {
   .container {
     width: 1700px !important;
     max-width: 100%;
+  }
+}
+
+@media (hover) {
+  a:hover {
+    opacity: 0.5;
+  }
+
+  .list__item a:hover::after {
+    width: 100%;
+  }
+  
+  .list__item a:hover {
+    opacity: 0.5;
+  }
+
+  .list__icon:hover {
+    cursor: pointer;
+  }
+
+  .list__icon:hover svg path {
+    fill: var(--text-color);
+  }
+
+  .hero__title:hover {
+    opacity: 0.5;
+  }
+
+  .hero__title:hover::after {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .hero__spinner:hover {
+    cursor: pointer;
+    animation-play-state: paused
+  }
+
+  .work__image-wrapper:hover {
+    opacity: 1;
+  }
+
+  .work__image-wrapper:hover .work__image {
+    border-radius: 4px;
+  }
+
+  .work__image-wrapper:hover .work__title {
+    opacity: 1;
+  }
+
+  .work__image:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+  }
+
+  .socials__icon:hover svg {
+    opacity: 0.5;
+  }  
+
+  .cookie-notice:hover svg {
+    animation-play-state: running;
+  }
+
+  .cookie-notice__button:hover {
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
   }
 }
