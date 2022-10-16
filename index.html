@@ -14,10 +14,13 @@
   <nav class="main-nav">
     <div class="container">
       <div class="row">
-        <div class="col-24 col-md-6 align-self-center d-none d-md-block">
-          <a class="main-nav__link fadeup" href="./index.html"><h1 class="hero__title">Jonah Kalkman</h1></a>
+        <div class="col-6 align-self-center">
+          <a class="main-nav__link fadeup" href="./index.html">
+            <h1 class="hero__title d-none d-md-block">Jonah Kalkman</h1>
+            <svg class="d-md-none hero__home-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </a>
         </div>
-        <div class="col-24 col-md-6 align-self-center">
+        <div class="col-6 align-self-center">
           <ul class="main-nav__list">
             <li class="list__item fadeup fadeup--delay-1"><a href="./work.html">Work</a></li>
             <li class="list__item fadeup fadeup--delay-2"><a href="mailto:jonah@jkagency.nl">Contact</a></li>
@@ -34,7 +37,7 @@
     <div class="container">
       <div class="row align-items-md-center justify-contend-xl-between">
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 order-last order-md-last order-lg-last">
-          <h2 class="title fadeup fadeup--delay-4">I’m Jonah, a frontend developer from Rotterdam.</h2>
+          <h2 class="intro__title fadeup fadeup--delay-4">I’m Jonah, a frontend developer from Rotterdam.</h2>
           <div class="fadeup fadeup--delay-5">
             <p>I currently work at <a href="https://www.bmade.nl/" target="_blank">B.made</a>, a dutch digital agency based in Rotterdam. At B.made I build websites and apps using Vue.js and React Native. Previously I worked at Dept and Keylane.
             </p>
@@ -53,7 +56,7 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-md-8 col-lg-5 col-xl-5 offset-lg-1 offset-xl-1 order-first order-md-first order-lg-last">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-5 offset-lg-1 offset-xl-1 order-first order-md-first order-lg-last">
           <img class="hero__image fadeup fadeup--delay-6" src="./images/portrait.jpg" alt="jonah kalkman">
           <span class="hero__spinner fadeup fadeup--delay-6">
             <svg viewBox="0 0 100 100" width="100" height="100">
@@ -106,8 +109,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="contact__description fadeup">Have a question? Send me an email or message me via social media.</p>
-          <a class="text-container fadeup" href="mailto:jonah@jkagency.nl"><h2 class="text">jonah@jkagency.nl</h2></a>
+          <h2 class="fadeup ">Contact</h2>
+          <p class="contact__description fadeup fadeup--delay-1">Have a question? Send me an email or message me via social media.</p>
+          <a class="contact__mail-wrapper fadeup fadeup--delay-2" href="mailto:jonah@jkagency.nl"><h2 class="contact__mail">jonah@jkagency.nl</h2></a>
         </div>
       </div>
     </div>
@@ -124,10 +128,15 @@
   </footer>
 
   <dialog open class="cookie-notice">
-    <p class="cookie-notice__title">We use third-party cookies in order to personalize your site experience.</p>
+    <div class="cookie-notice__wrapper">
+      <span class="cookie-notice__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.363 490.363" style="enable-background:new 0 0 490.363 490.363" xml:space="preserve"><path d="M466.125 187.338c-15.2-15.2-24.1-36.2-24.1-57.6 0-45.1-36.6-81.7-81.7-81.7-21.8 0-42.4-8.6-57.6-24.1-31.8-31.8-83.5-31.8-115.4.1-15.2 15.2-36.2 24.1-57.6 24.1-45.1 0-81.7 36.6-81.7 81.7 0 21.8-8.6 42.4-24.1 57.6-31.9 31.9-31.9 83.6 0 115.5 15.2 15.2 24.1 36.2 24.1 57.6 0 45.1 36.6 81.7 81.7 81.7 21.8 0 42.4 8.6 57.6 24.1 31.9 31.9 83.6 31.9 115.5 0 15.2-15.2 36.2-24.1 57.6-24.1 45.1 0 81.7-36.6 81.7-81.7 0-21.8 8.6-42.4 24.1-57.6 32.2-32.3 32.2-83.7-.1-115.6zm-350.7 36.6c-9.3 0-17.1-7.8-17.1-17.1s7.8-17.1 17.1-17.1 17.1 7.8 17.1 17.1c-.4 9.3-7.8 17.1-17.1 17.1zm73.5 171.1c-15.6 0-28.4-12.8-28.4-28.4s12.8-28.4 28.4-28.4 28.3 12.9 28.3 28.4c0 16-12.4 28.4-28.3 28.4zm71.5-129.1c-11.7 0-21-9.3-21-21s9.3-21 21-21 21 9.3 21 21-9.3 21-21 21zm21-140c-9.3 0-17.1-7.8-17.1-17.1s7.8-17.1 17.1-17.1 17.1 7.8 17.1 17.1-7.8 17.1-17.1 17.1zm111.2 176.2c-12.1 0-21.4-9.7-21.4-21.4 0-12.1 9.7-21.4 21.4-21.4 12.1 0 21.4 9.7 21.4 21.4 0 12-9.3 21.4-21.4 21.4z"/></svg>
+      </span>
+      <p class="cookie-notice__title">We use third-party cookies in order to personalize your site experience.</p>
+    </div>
     <form class="cookie-notice__form" method="dialog">
-      <button class="cookie-notice__button">Allow</button>
-      <button class="cookie-notice__button">Decline</button>
+      <button id="cookie-notice__allow" class="cookie-notice__button" value="default">Allow</button>
+      <button id="cookie-notice__decline" class="cookie-notice__button" value="cancel">Decline</button>
     </form>
   </dialog>
 

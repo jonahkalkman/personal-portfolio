@@ -51,12 +51,25 @@ window.addEventListener('DOMContentLoaded', () => {
     document.documentElement.toggleAttribute('dark-mode');  
   });
 
-  let text = document.querySelector('.text');
+  const text = document.querySelector('.contact__mail');
+  if(text) {
+    text.addEventListener('mousemove', function(e) {
+      const x = e.pageX - e.target.offsetLeft;
+      const y = e.pageY - e.target.offsetTop;
+      e.target.style.setProperty('--x', `${ x }px`)
+      e.target.style.setProperty('--y', `${ y }px`)
+    });
+  }
 
-  text.addEventListener('mousemove', function(e) {
-    const x = e.pageX - e.target.offsetLeft;
-    const y = e.pageY - e.target.offsetTop;
-    e.target.style.setProperty('--x', `${ x }px`)
-    e.target.style.setProperty('--y', `${ y }px`)
+  const cookieNotice = document.querySelector('.cookie-notice');
+  const allowButton = document.getElementById('cookie-notice__allow');
+  const declineButton = document.getElementById('cookie-notice__decline');
+  allowButton.addEventListener('click', () => {
+    localStorage.setItem('cookie-notice', JSON.stringify(true));
+    cookieNotice.hidden = true
+  });
+  declineButton.addEventListener('click', () => {
+    localStorage.setItem('cookie-notice', JSON.stringify(false));
+    cookieNotice.hidden = true
   });
 });
