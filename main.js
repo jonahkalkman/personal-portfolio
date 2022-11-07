@@ -69,24 +69,24 @@ window.addEventListener('DOMContentLoaded', () => {
   if(cookieChoice !== null) {
     cookieNotice.hidden = true;
     if(JSON.parse(cookieChoice)) {
-      const script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-EPLZ2MQZ84";
-      const script2 = document.createElement("script");
-      script2.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EPLZ2MQZ84');";
-      document.body.appendChild(script);
-      document.body.appendChild(script2);
+      // const script = document.createElement("script");
+      // script.src = "https://www.googletagmanager.com/gtag/js?id=G-EPLZ2MQZ84";
+      // const script2 = document.createElement("script");
+      // script2.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EPLZ2MQZ84');";
+      // document.body.appendChild(script);
+      // document.body.appendChild(script2);
     }
   }
   allowButton.addEventListener('click', () => {
     localStorage.setItem('cookie-notice', JSON.stringify(true));
     cookieNotice.hidden = true;
 
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-EPLZ2MQZ84"; 
-    const script2 = document.createElement("script");
-    script2.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EPLZ2MQZ84');";
-    document.body.appendChild(script); 
-    document.body.appendChild(script2);  
+    // const script = document.createElement("script");
+    // script.src = "https://www.googletagmanager.com/gtag/js?id=G-EPLZ2MQZ84"; 
+    // const script2 = document.createElement("script");
+    // script2.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EPLZ2MQZ84');";
+    // document.body.appendChild(script); 
+    // document.body.appendChild(script2);  
   });
   declineButton.addEventListener('click', () => {
     localStorage.setItem('cookie-notice', JSON.stringify(false));
